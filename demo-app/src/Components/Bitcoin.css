@@ -1,0 +1,20 @@
+.title-blue {
+    color: rgb(37, 37, 168);
+}
+
+.title-purple {
+    color: rgb(142, 37, 168);
+}
+
+.container {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    color: brown;
+    margin: 10px auto;
+}
