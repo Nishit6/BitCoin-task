@@ -29,7 +29,7 @@ const colorChangeHandler = () =>{
 }
 
 const prevPriceHandler = ()=>{
- setShowPreviousPrice(!previousPrice)
+ setShowPreviousPrice(!showPreviousPrice)
 }
 
 
@@ -41,7 +41,7 @@ const prevPriceHandler = ()=>{
     <Card style={{ width: '18rem' }}>
     <Card.Body>
       <Card.Title className={blueColor ? 'title-blue' : 'title-purple'} >{bitCoinPrice.length > 0 ? "current price: " + bitCoinPrice : 'please add price'}</Card.Title>
-      <Card.Title >{showPreviousPrice && "previous price: " + previousPrice }</Card.Title>
+      <Card.Title >{showPreviousPrice && "previous price: " + JSON.stringify(previousPrice.bitCoinPrice) }</Card.Title>
       <input value={inputVal} type='text' required={true} onChange={inputHandler}/>
       {bitCoinPrice.length > 0 ?  <Button onClick={buttonHandler} className='mb-3 mt-3' variant="success">Refresh Bitcoin Price</Button> :    <Button onClick={buttonHandler} className='mb-3 mt-3' variant="warning">get Bitcoin Price</Button> }
 
